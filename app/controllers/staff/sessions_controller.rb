@@ -1,4 +1,4 @@
-class Staff::SessionController < Staff::Base
+class Staff::SessionsController < Staff::Base
   def new
     if current_staff_member
       redirect_to :staff_root

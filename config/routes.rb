@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
   namespace :staff do
     root "top#index"
-    get "login" => "session#new", as: :login
-    post "session" => "session#create", as: :session
-    delete "session" => "session#destroy"
+    get "login" => "sessions#new"
+    post "session" => "sessions#create"
+    delete "session" => "sessions#destroy"
   end
 
   namespace :admin do
     root "top#index"
-    get "login" => "session#new", as: :login
-    post "session" => "session#create", as: :session
-    delete "session" => "session#destroy"
+    get "login" => "sessions#new"
+    post "session" => "sessions#create"
+    delete "session" => "sessions#destroy"
   end
 
   namespace :customer do

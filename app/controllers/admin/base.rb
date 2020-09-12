@@ -1,4 +1,4 @@
-class Admin::BaseController < ApplicationController
+class Admin::Base < ApplicationController
   private def current_administrator
     if session[:administrator_id]
       @current_administrator ||=
