@@ -24,5 +24,4 @@ class Staff::AccountsController < Staff::Base
       :family_name_kana, :given_name_kana
     )
   end
-
 end
